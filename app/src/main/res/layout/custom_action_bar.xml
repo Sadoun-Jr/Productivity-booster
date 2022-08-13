@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "wrap_content"
+    android:gravity = "center_vertical"
+    android:padding = "10dp"
+    >
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        >
+
+        <TextView
+            android:textColor="@color/white_text_color"
+            android:layout_gravity="center_horizontal"
+            android:id = "@+id/name"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:layout_margin="3dp"
+            android:text = "Your Log"
+            android:textSize = "20sp"
+            android:textStyle = "bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

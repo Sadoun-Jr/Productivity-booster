@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<!-- Note that the animations may show red in Android Studio;
+     however, they are present and working perfectly fine. -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/getInitialDetails">
+
+    <fragment
+        android:id="@+id/productivity_tracker_fragment"
+        android:name="com.example.android.productivity.productivitytracker.ProductivityTrackerFragment"
+        android:label="@string/productivity_tracker_fragment"
+        tools:layout="@layout/fragment_productivity_tracker">
+        <argument
+            android:name="nameOfUser"
+            app:argType="string" />
+        <argument
+            android:name="sleepTime"
+            app:argType="integer" />
+        <argument
+            android:name="wakeUpTime"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/getInitialDetails"
+        android:name="com.example.android.productivity.initialization.GetName"
+        android:label="get_initial_details_fragment"
+        tools:layout="@layout/get_initial_details">
+
+        <action
+            android:id="@+id/action_getInitialDetails_to_getSleepTime"
+            app:destination="@id/getSleepTime"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_getInitialDetails_to_productivity_tracker_fragment"
+            app:destination="@id/productivity_tracker_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/getSleepTime"
+        android:name="com.example.android.productivity.initialization.GetSleepTime"
+        android:label="get_sleep_time_fragment"
+        tools:layout="@layout/get_sleep_time_fragment" >
+
+        <action
+            android:id="@+id/action_getSleepTime_to_getWakeUpTime"
+            app:destination="@id/getWakeUpTime"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="nameOfUser"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/getWakeUpTime"
+        android:name="com.example.android.productivity.initialization.GetWakeUpTime"
+        android:label="get_wake_up_time_fragment"
+        tools:layout="@layout/get_wake_up_time_fragment" >
+
+        <action
+            android:id="@+id/action_getWakeUpTime_to_productivity_tracker_fragment"
+            app:destination="@id/productivity_tracker_fragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="nameOfUser"
+            app:argType="string" />
+        <argument
+            android:name="sleepTime"
+            app:argType="integer" />
+    </fragment>
+
+
+</navigation>

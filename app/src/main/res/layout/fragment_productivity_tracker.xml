@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+
+
+<!- Wrapping the layout into /layout to make it available with data binding. -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Data to make available to the XML via data binding. In this case,
+         the whole ViewModel, so that we can access the LiveData,
+         click handlers, and state variables. -->
+    <data>
+
+        <variable
+            name="ProductivityTrackerViewModel"
+            type="com.example.android.productivity.viewmodels.ProductivityTrackerViewModel" />
+    </data>
+
+
+
+    <!-- Start of the visible fragment layout using ConstraintLayout -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".productivitytracker.ProductivityTrackerFragment">
+
+        <RelativeLayout
+            android:id="@+id/relateiveLayoutForAddFirstItemImage"
+            android:layout_width = "match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height = "match_parent"
+            >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/firstItemImg"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/curious350" />
+
+            <TextView
+                android:id="@+id/firstGoalDoesntExist"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstItemImg"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/makeFirstItem"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            app:srcCompat="@drawable/nicepng_venkateshwara_png_2519428"
+            android:backgroundTint="#0096FF"
+            app:rippleColor="#001271"
+            app:borderWidth="0dp"
+            android:layout_margin="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyvlerView"
+            tools:listitem="@layout/card_view_design"
+            />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

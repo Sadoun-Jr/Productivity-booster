@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2019, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">SJ Productivity</string>
+    <string name="productivity_tracker_fragment">SleepTrackerFragment</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="clear">Clear</string>
+
+    <string name="quality_0">Sleep Quality 0</string>
+    <string name="quality_1">Sleep Quality 1</string>
+    <string name="quality_2">Sleep Quality 2</string>
+    <string name="quality_3">Sleep Quality 3</string>
+    <string name="quality_4">Sleep Quality 4</string>
+    <string name="quality_5">Sleep Quality 5</string>
+
+    <string name="title"><![CDATA[<h3>HERE IS YOUR SLEEP DATA</h3>]]></string>
+    <string name="start_time"><![CDATA[<b>Start:</b>]]></string>
+    <string name="end_time"><![CDATA[<b>End:</b>]]></string>
+    <string name="quality"><![CDATA[<b>Quality:</b>]]></string>
+    <string name="hours_slept"><![CDATA[<b>Hours:Minutes:Seconds</b>]]></string>
+
+    <string name="how_was_hour_sleep">How was your sleep?</string>
+    <string name="zero_very_bad">Very bad</string>
+    <string name="one_poor">Poor</string>
+    <string name="two_soso">So-so</string>
+    <string name="three_ok">OK</string>
+    <string name="four_pretty_good">Pretty good</string>
+    <string name="five_excellent">Excellent!</string>
+
+    <string name="cleared_message">All your data is gone forever.</string>
+    <string name="fillInfo">Please enter your name</string>
+    <string name="next">Next</string>
+    <string name="name">Name &#8230;</string>
+    <string name="whenDoYouWakeUp">And when do you usually wake up</string>
+    <string name="whenDoYouSleep">When do you usually sleep?</string>
+    <string name="wakeUpNotif">You will get wake up notification at</string>
+    <string name="sleepNotif">You will get sleep notification at</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholderDay">Wednesday, March 15th</string>
+    <string name="placeholderGoalRating">Goal done</string>
+    <string name="placeholderDesc">Descreption of day</string>
+    <string name="channel_name">notifyRem</string>
+    <string name="channel_description">default channel description</string>
+    <string name="title_activity_add_new_goal">AddNewGoal</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="go">GO!</string>
+    <string name="Descreption">Description</string>
+    <string name="pref_nav_to_add_goal_from_notif">yes</string>
+    <string name="pref_nav_to_add_goal_from_notif_negative">no</string>
+    <string name="test">test</string>
+    <string name="howWasToday">Did you achieve today\'s goal?</string>
+    <string name="whatsTodaysGoal">what\'s your goal for today?</string>
+    <string name="rateTodaysGoal">Did you achieve today\'s goal?</string>
+    <string name="getstarted">Let\'s get Started!</string>
+    <string name="whatDoWeCallYou">What should we call you...?</string>
+    <string name="makeFirstItem">No goals made yet, tap the \"+\" button to create your first goal and start tracking.</string>
+    <string name="goalSaved">Awesome, make sure you work hard to achieve your goal today!</string>
+    <string name="toTracking">LET\'S GO!</string>
+    <string name="goalRatedHappy">Well done!</string>
+    <string name="goalRatedMeh">Not bad, you can do better the next time though</string>
+    <string name="goalRatedSad">We all have our bad days, don\'t let it get you down.</string>
+    <string name="goalEditedSuccess">Entry edited successfully</string>
+    <string name="plsRate">Please rate the entry</string>
+    <string name="creategoal">Create Goal</string>
+    <string name="rateGoal">Rate Entry</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit your data</string>
+
+    <!-- Strings for On Boarding Screen -->
+
+</resources>
